@@ -6,10 +6,10 @@
 
 {{ .Content }}
 
-    <p>List of operators</p>
+    <p>List of operator files</p>
     <ul>
         {{ range .Site.RegularPages }}
-            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
     </ul>
 
