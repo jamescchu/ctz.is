@@ -1,4 +1,4 @@
 ---
-title: "Skadi"
-slug: "char_263_skadi"
+title: Skadi
+layout: operators
 ---

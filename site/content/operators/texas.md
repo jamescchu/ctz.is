@@ -1,5 +1,4 @@
 ---
-layout: blog
+layout: operators
 title: Texas
-slug: char_102_texas
 ---

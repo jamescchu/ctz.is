@@ -6,6 +6,11 @@
 
 {{ .Content }}
 
-<a href="{{ "/features" | relURL }}">Check out what it can do</a>
+    <p>List of operators</p>
+    <ul>
+        {{ range .Site.RegularPages }}
+            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        {{ end }}
+    </ul>
 
 {{ end }}
