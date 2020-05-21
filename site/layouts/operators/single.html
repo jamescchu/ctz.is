@@ -5,9 +5,9 @@
 <p>Data can be placed under each character's file or in a global JSON file. <br/>
     Information below is extracted from character_table.json</p>
 
-{{ range $var, $op := .Site.Data.operators.character_table }}
-    {{ if eq $op.name ($.Param "title") }}
-        <p>
+{{ range $var, $op := .Site.Data.operators.character_table }} <!-- loop through data json -->
+    {{ if eq $op.name ($.Param "title") }} <!-- match name to current page -->
+        <p> <!-- display values below -->
             {{ $var }}<br>
             {{ $op.name }}<br>
             Position: {{ $op.position }}<br>
@@ -18,6 +18,7 @@
 {{ end }}
 
     <p>Additional content is be written via the CMS below:</p>
+    <!-- render markdown content from contents/operators/*.md -->
     <p>{{ .Content }}</p>
 
 {{ end }}
