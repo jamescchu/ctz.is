@@ -8,7 +8,7 @@ Setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for
 
 ### :exclamation: Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed.
 
 Next step, clone this repository and run:
 
@@ -16,7 +16,7 @@ Next step, clone this repository and run:
 npm install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
+This will take some time and will install all packages necessary to run the site and its tasks.
 
 ### :construction_worker: Development
 
