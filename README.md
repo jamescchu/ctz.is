@@ -1,10 +1,8 @@
-# Victor Hugo
-
-**A Hugo boilerplate for creating truly epic websites**
+# Sanity;Gone Static Site Demo
 
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+Setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 ## Usage
 
@@ -56,12 +54,12 @@ See [package.json](package.json#L8) for all tasks.
 
 ```
 |--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
+|  |--content          // Pages and collections
+|  |--data             // JSON data
 |  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
+|  |  |--partials      // This is where includes are
 |  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
+|  |--static           // Files in here ends up in the public folder when compiled
 |--src                 // Files that will pass through the asset pipeline
 |  |--css              // Webpack will bundle imported css separately
 |  |--index.js         // index.js is the webpack entry for your css & js assets
@@ -99,16 +97,5 @@ You can access the environment variable inside the theme files with `getenv "NOD
     {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
 
 All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
 
 ## Enjoy!! 😸
